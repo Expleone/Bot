@@ -8,18 +8,17 @@ module.exports = {
         //console.log(reaction._emoji)
 
         if(reaction.message.channelId == eventChannelId){
-
-            if(reaction._emoji.name != '👍'){
-                reaction.remove()
-	                .catch(error => console.error('Failed to remove reactions:', error));
-		console.log("reaction removed")
-            }
+            	if(reaction._emoji.name != '👍'){
+                	reaction.remove()
+	                	.catch(error => console.error('Failed to remove reactions:', error));
+			console.log("reaction removed")
+            	}
         }
 
 		if(reaction.message.channelId == rules){
-        reaction.remove()
-	        .catch(error => console.error('Failed to remove reactions:', error));
-		console.log("reaction removed")
-        }
+        		reaction.remove()
+	        		.catch(error => console.error('Failed to remove reactions:', error));
+			console.log("reaction removed")
+        	}
 	},
 };
